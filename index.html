@@ -1,0 +1,318 @@
+<title>Privacy Policy — Lighten</title>
+<style>
+  :root {
+    --bg: #F7F9F8;
+    --surface: #FFFFFF;
+    --text: #1A2321;
+    --text-secondary: #5B6B66;
+    --accent: #0E7C6B;
+    --accent-light: #4DB6A5;
+    --border: #E3E8E6;
+    --shadow: 0 1px 2px rgba(16, 30, 25, 0.04), 0 8px 24px rgba(16, 30, 25, 0.05);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101613;
+      --surface: #161F1A;
+      --text: #EAF2EF;
+      --text-secondary: #9AAFA8;
+      --accent: #55C2AF;
+      --accent-light: #7FD4C4;
+      --border: #263029;
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.35);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #101613;
+    --surface: #161F1A;
+    --text: #EAF2EF;
+    --text-secondary: #9AAFA8;
+    --accent: #55C2AF;
+    --accent-light: #7FD4C4;
+    --border: #263029;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.35);
+  }
+  :root[data-theme="light"] {
+    --bg: #F7F9F8;
+    --surface: #FFFFFF;
+    --text: #1A2321;
+    --text-secondary: #5B6B66;
+    --accent: #0E7C6B;
+    --accent-light: #4DB6A5;
+    --border: #E3E8E6;
+    --shadow: 0 1px 2px rgba(16, 30, 25, 0.04), 0 8px 24px rgba(16, 30, 25, 0.05);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 64px 24px 120px;
+  }
+
+  header.top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 56px;
+  }
+
+  .mark {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+  }
+  .mark svg { width: 18px; height: 18px; }
+
+  .wordmark {
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+
+  h1 {
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif;
+    font-weight: 600;
+    font-size: clamp(30px, 5vw, 40px);
+    line-height: 1.15;
+    margin: 0 0 10px;
+    text-wrap: balance;
+  }
+
+  .meta {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin: 0 0 40px;
+  }
+
+  .lede {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--text);
+    margin: 0 0 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--border);
+  }
+  .lede strong { color: var(--accent); }
+
+  nav.toc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin-bottom: 56px;
+    box-shadow: var(--shadow);
+  }
+  nav.toc p {
+    margin: 0 0 12px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+  }
+  nav.toc ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px 20px;
+  }
+  nav.toc a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 14.5px;
+    display: flex;
+    gap: 8px;
+  }
+  nav.toc a:hover { color: var(--accent); }
+  nav.toc a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+  nav.toc .n { color: var(--accent-light); font-variant-numeric: tabular-nums; font-weight: 600; }
+
+  section {
+    margin-bottom: 44px;
+    scroll-margin-top: 24px;
+  }
+
+  .eyebrow {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .eyebrow .n {
+    font-family: Georgia, serif;
+    font-size: 15px;
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  h2 {
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  section p, section li {
+    color: var(--text);
+    font-size: 16px;
+  }
+  section p { margin: 0 0 14px; }
+  section ul { margin: 0 0 14px; padding-left: 22px; }
+  section li { margin-bottom: 8px; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin: 18px 0;
+  }
+  .card p:last-child { margin-bottom: 0; }
+  .card .label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 8px;
+  }
+
+  a { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.92em;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 0.1em 0.4em;
+    border-radius: 4px;
+  }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--text-secondary);
+    font-size: 13.5px;
+  }
+
+  @media (max-width: 520px) {
+    .wrap { padding: 40px 18px 96px; }
+    nav.toc ol { grid-template-columns: 1fr; }
+  }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 4C10 5 5 10 5 18c0 0 4-1 8-5 2.5-2.5 4-5.5 5-9z" fill="white"/>
+        <path d="M5 19c2-4 5-7 8-9" stroke="white" stroke-width="1.1" stroke-linecap="round" fill="none"/>
+      </svg>
+    </div>
+    <span class="wordmark">Lighten</span>
+  </header>
+
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated: July 25, 2026</p>
+
+  <p class="lede">The short version: <strong>Lighten has no server and no account.</strong> Every debt, payment, and setting you enter is stored only in a local database on your own device. This page explains that in full, plus the two narrow exceptions — in‑app purchases and, if ever enabled, advertising.</p>
+
+  <nav class="toc" aria-label="Table of contents">
+    <p>On this page</p>
+    <ol>
+      <li><a href="#no-server"><span class="n">1</span> No account, no server</a></li>
+      <li><a href="#purchases"><span class="n">2</span> In‑app purchases</a></li>
+      <li><a href="#notifications"><span class="n">3</span> Notifications</a></li>
+      <li><a href="#advertising"><span class="n">4</span> Advertising</a></li>
+      <li><a href="#not-collected"><span class="n">5</span> What we don't collect</a></li>
+      <li><a href="#children"><span class="n">6</span> Children's privacy</a></li>
+      <li><a href="#changes"><span class="n">7</span> Changes to this policy</a></li>
+      <li><a href="#contact"><span class="n">8</span> Contact</a></li>
+    </ol>
+  </nav>
+
+  <section id="no-server">
+    <div class="eyebrow"><span class="n">01</span></div>
+    <h2>No account, no server</h2>
+    <p>Lighten does not ask you to sign up, sign in, or create a profile. There is no backend server for the app to send your information to, because Lighten was built not to need one.</p>
+    <p>Every debt you add — its balance, interest rate, minimum payment, due date, notes — along with your payment history and app settings, is written to a local database that lives only on your device. Nothing is uploaded, synced, or backed up to us. We have no way to see it, and no way to recover it for you if your device is lost, reset, or if you uninstall the app.</p>
+  </section>
+
+  <section id="purchases">
+    <div class="eyebrow"><span class="n">02</span></div>
+    <h2>In-app purchases</h2>
+    <p>Lighten offers one optional, one-time purchase — <strong>Lighten Pro</strong> — to unlock additional features. The purchase itself is handled entirely by the Apple App Store; we never see your name, email, or payment details, which Apple processes directly.</p>
+    <div class="card">
+      <p class="label">Third party: RevenueCat</p>
+      <p>To verify your purchase and let you restore it on a new device, Lighten uses <a href="https://www.revenuecat.com" target="_blank" rel="noopener">RevenueCat</a>, a subscription-management service. RevenueCat receives an anonymous app-user identifier and your App Store transaction information — never your payment details. Read RevenueCat's own policy at <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a>.</p>
+    </div>
+  </section>
+
+  <section id="notifications">
+    <div class="eyebrow"><span class="n">03</span></div>
+    <h2>Notifications</h2>
+    <p>If you turn on payment reminders, they're scheduled and delivered entirely by your device's own operating system. No reminder content, due dates, or debt names are sent anywhere to make this work.</p>
+  </section>
+
+  <section id="advertising">
+    <div class="eyebrow"><span class="n">04</span></div>
+    <h2>Advertising</h2>
+    <p>Lighten does not currently show any ads. The app is built with the technical capability to show ads in a future update; if that's ever turned on, you will be asked for tracking permission first, and this policy will be updated to name the ad partner and what it collects before that happens.</p>
+  </section>
+
+  <section id="not-collected">
+    <div class="eyebrow"><span class="n">05</span></div>
+    <h2>What we don't collect</h2>
+    <ul>
+      <li>No analytics or usage tracking tied to you</li>
+      <li>No crash reports linked to your identity</li>
+      <li>No location, contacts, or photos</li>
+      <li>No bank account credentials — Lighten never asks you to link a bank</li>
+    </ul>
+  </section>
+
+  <section id="children">
+    <div class="eyebrow"><span class="n">06</span></div>
+    <h2>Children's privacy</h2>
+    <p>Lighten is not directed at children under 13, and we do not knowingly collect information from them.</p>
+  </section>
+
+  <section id="changes">
+    <div class="eyebrow"><span class="n">07</span></div>
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, the updated version will be posted on this same page with a new "Last updated" date above.</p>
+  </section>
+
+  <section id="contact">
+    <div class="eyebrow"><span class="n">08</span></div>
+    <h2>Contact</h2>
+    <p>Questions about this policy or your data can be sent to <a href="mailto:izidev2023@gmail.com">izidev2023@gmail.com</a>.</p>
+  </section>
+
+  <footer>
+    Lighten — a debt payoff planner. This policy covers the Lighten mobile app only.
+  </footer>
+</div>
